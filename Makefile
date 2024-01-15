@@ -8,5 +8,5 @@ validate:
 brain-games:
 	./bin/brain-games
 
-# make brain-calc
+# make brain-games
 # make brain-even
