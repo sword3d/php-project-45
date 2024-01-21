@@ -20,5 +20,10 @@ brain-even:
 brain-calc:
 	./bin/brain-calc
 
+brain-gcd:
+	./bin/brain-gcd
+
 # make brain-games
 # make brain-even
+# make brain-calc
+# make brain-gcd

@@ -1,0 +1,41 @@
+#!/usr/bin/env php
+
+<?php
+    
+    require_once __DIR__ . '../../vendor/autoload.php';
+    require_once __DIR__ . '../../src/Engine.php';
+
+    use function cli\line;
+
+    $name = BrainGames\Cli\greeting();
+
+    line('Find the greatest common divisor of given numbers.');
+
+    function gcd($a, $b) 
+    {
+         while ($a != $b)
+            if ($a > $b) {
+                $a -= $b;
+            }
+            else {
+                $b -= $a;
+            }
+        return $a;
+        
+    }
+
+
+    function event($name)
+    {   
+        $numberOne = rand(0, 100);
+        $numberTwo = rand(0, 100);
+        
+        $result = gcd($numberOne, $numberTwo);
+        $question = "{$numberOne} {$numberTwo}";
+ 
+        return BrainGames\Engine\dialogue($name, $question, $result);
+        
+    }
+    
+    BrainGames\Engine\check($name);
+    
