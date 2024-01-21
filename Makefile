@@ -14,6 +14,9 @@ fix:
 brain-games:
 	./bin/brain-games
 
+brain-even:
+	./bin/brain-even
+
 
 
 # make brain-games
