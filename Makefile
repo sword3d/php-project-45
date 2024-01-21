@@ -17,7 +17,8 @@ brain-games:
 brain-even:
 	./bin/brain-even
 
-
+brain-calc:
+	./bin/brain-calc
 
 # make brain-games
 # make brain-even
