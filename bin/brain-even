@@ -11,7 +11,7 @@
 
     line('Answer "yes" if the number is even, otherwise answer "no".');
 
-    function event($name)
+    $eventFunction = function($name)
     {
         
         $number = rand(0, 100);
@@ -21,8 +21,8 @@
 
         return \BrainGames\Engine\dialogue($name, $question, $result);
         
-    }
+    };
 
-    \BrainGames\Engine\check($name);
+    \BrainGames\Engine\check($name, $eventFunction);
 
     

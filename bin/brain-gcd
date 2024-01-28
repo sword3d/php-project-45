@@ -16,7 +16,7 @@
     }
 
 
-    function event($name)
+    $eventFunction = function($name)
     {   
         $numberOne = rand(0, 100);
         $numberTwo = rand(0, 100);
@@ -28,5 +28,5 @@
         
     }
     
-    \BrainGames\Engine\check($name);
+    \BrainGames\Engine\check($name, $eventFunction);
     

@@ -11,7 +11,7 @@
 
     line('What number is missing in the progression?');
 
-    function event($name)
+    $eventFunction = function($name)
     {
         $lenghtProgression = rand(5, 10);
         $lenghtDisabled = rand(0, $lenghtProgression - 1);
@@ -34,6 +34,6 @@
         return \BrainGames\Engine\dialogue($name, $question, $result);
     }
 
-    \BrainGames\Engine\check($name);
+    \BrainGames\Engine\check($name, $eventFunction);
 
     

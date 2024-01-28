@@ -11,7 +11,7 @@
 
     line('What is the result of the expression?');
 
-    function event($name)
+    $eventFunction = function($name)
     {
  
         $randSign = '+';
@@ -36,7 +36,7 @@
         return BrainGames\Engine\dialogue($name, $question, $result);
     }
 
-    BrainGames\Engine\check($name);
+    \BrainGames\Engine\check($name, $eventFunction);
 
 
     

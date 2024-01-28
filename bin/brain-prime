@@ -21,7 +21,7 @@
         return true;
     }
 
-    function event($name)
+    $eventFunction = function($name)
     {
         $question = rand(1, 100);
         $result = (is_prime($question)) ? 'yes' : 'no';
@@ -29,6 +29,6 @@
         return \BrainGames\Engine\dialogue($name, $question, $result);
     }
 
-    \BrainGames\Engine\check($name);
+    \BrainGames\Engine\check($name, $eventFunction);
 
     

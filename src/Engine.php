@@ -20,14 +20,12 @@ function dialogue(string $name, string $question, string $result)
     }
 }
 
-function check(string $name)
+function check(string $name, $eventFunction)
 {
     $success = false;
 
     for ($i = 0; $i < 3; $i++) {
-    	// phpcs:disable
-        $success = event($name);
-        // phpcs:enable
+        $success = $eventFunction($name);
         if ($success == false) {
             break;
         }
