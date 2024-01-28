@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function dialogue(string $name,string $question,string $result)
+function dialogue(string $name, string $question, string $result)
 {
     line("Question: {$question}");
     $answer = prompt('Your answer');
