@@ -20,7 +20,8 @@ function dialogue(string $name, string $question, string $result)
     }
 }
 
-function check(string $name, $eventFunction)
+
+function check(string $name, object $eventFunction)
 {
     $success = false;
 
