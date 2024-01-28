@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function dialogue($name, $question, $result)
+function dialogue(string $name, $question, $result)
 {
     line("Question: {$question}");
     $answer = prompt('Your answer');
@@ -20,7 +20,7 @@ function dialogue($name, $question, $result)
     }
 }
 
-function check($name)
+function check(string $name)
 {
     $success = false;
 
