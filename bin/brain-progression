@@ -15,7 +15,7 @@
     {
         $lenghtProgression = rand(5, 10);
         $lenghtDisabled = rand(1, $lenghtProgression);
-        $lenghtSum = rand(0, 10);
+        $lenghtSum = rand(1, 10);
         $sum = $lenghtSum;
         $progression = [];
         $result = '';
