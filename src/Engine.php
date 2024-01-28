@@ -21,7 +21,7 @@ function dialogue(string $name, string $question, string $result)
 }
 
 
-function check(string $name, object $eventFunction)
+function check(string $name, \Closure $eventFunction)
 {
     $success = false;
 
