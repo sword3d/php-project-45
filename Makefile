@@ -25,7 +25,10 @@ brain-gcd:
 
 brain-progression:
 	./bin/brain-progression
-	
+
+brain-prime:
+	./bin/brain-prime
+
 # make brain-games
 # make brain-even
 # make brain-calc
