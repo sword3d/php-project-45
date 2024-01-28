@@ -14,7 +14,7 @@
     function event($name)
     {
         $lenghtProgression = rand(5, 10);
-        $lenghtDisabled = rand(1, $lenghtProgression);
+        $lenghtDisabled = rand(0, $lenghtProgression - 1);
         $lenghtSum = rand(1, 10);
         $sum = $lenghtSum;
         $progression = [];
