@@ -33,9 +33,9 @@
         $result = gcd($numberOne, $numberTwo);
         $question = "{$numberOne} {$numberTwo}";
  
-        return BrainGames\Engine\dialogue($name, $question, $result);
+        return \BrainGames\Engine\dialogue($name, $question, $result);
         
     }
     
-    BrainGames\Engine\check($name);
+    \BrainGames\Engine\check($name);
     
