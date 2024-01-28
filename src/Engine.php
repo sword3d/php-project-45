@@ -20,7 +20,7 @@ function dialogue(string $name,string $question,string $result)
     }
 }
 
-function check(string $name,string $namespace)
+function check(string $name)
 {
     $success = false;
 
