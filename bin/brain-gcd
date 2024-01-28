@@ -27,8 +27,8 @@
 
     function event($name)
     {   
-        $numberOne = rand(0, 100);
-        $numberTwo = rand(0, 100);
+        $numberOne = rand(0, 50);
+        $numberTwo = rand(0, 50);
         
         $result = gcd($numberOne, $numberTwo);
         $question = "{$numberOne} {$numberTwo}";
