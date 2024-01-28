@@ -23,7 +23,11 @@ brain-calc:
 brain-gcd:
 	./bin/brain-gcd
 
+brain-progression:
+	./bin/brain-progression
+	
 # make brain-games
 # make brain-even
 # make brain-calc
 # make brain-gcd
+# make brain-progression

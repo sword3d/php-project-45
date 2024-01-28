@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+
+<?php
+    
+    require_once __DIR__ . '../../vendor/autoload.php';
+    require_once __DIR__ . '../../src/Engine.php';
+
+    use function cli\line;
+
+    $name = BrainGames\Cli\greeting();
+
+    line('What number is missing in the progression?');
+
+    function event($name)
+    {
+        $lenghtProgression = rand(5, 10);
+        $lenghtDisabled = rand(1, $lenghtProgression);
+        $lenghtSum = rand(0, 10);
+        $sum = $lenghtSum;
+        $progression = [];
+        $result = '';
+
+        for ($i=0; $i < $lenghtProgression; $i++) { 
+            $progression[$i] = $sum;
+            if ($i == $lenghtDisabled) {
+                $result = $sum;
+                $progression[$i] = '..';
+            }
+            $sum = $sum + $lenghtSum;
+        }
+
+        $question = implode(' ', $progression);
+
+        return \BrainGames\Engine\dialogue($name, $question, $result);
+    }
+
+    \BrainGames\Engine\check($name);
+
+    
