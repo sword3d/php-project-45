@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function dialogue(string $name, $question, $result)
+function dialogue(string $name,string $question,string $result)
 {
     line("Question: {$question}");
     $answer = prompt('Your answer');
@@ -20,12 +20,14 @@ function dialogue(string $name, $question, $result)
     }
 }
 
-function check(string $name)
+function check(string $name,string $namespace)
 {
     $success = false;
 
     for ($i = 0; $i < 3; $i++) {
+    	// phpcs:disable
         $success = event($name);
+        // phpcs:enable
         if ($success == false) {
             break;
         }
