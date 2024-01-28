@@ -34,7 +34,7 @@
         $result = eval("return $numberOne $randSign $numberTwo;");
 
         return BrainGames\Engine\dialogue($name, $question, $result);
-    }
+    };
 
     \BrainGames\Engine\check($name, $eventFunction);
 

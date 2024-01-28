@@ -27,7 +27,7 @@
         $result = (is_prime($question)) ? 'yes' : 'no';
 
         return \BrainGames\Engine\dialogue($name, $question, $result);
-    }
+    };
 
     \BrainGames\Engine\check($name, $eventFunction);
 

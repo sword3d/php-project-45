@@ -32,7 +32,7 @@
         $question = implode(' ', $progression);
 
         return \BrainGames\Engine\dialogue($name, $question, $result);
-    }
+    };
 
     \BrainGames\Engine\check($name, $eventFunction);
 
